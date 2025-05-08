@@ -4,7 +4,7 @@ package com.javaex.ex01;
 public class Customer extends Person{
 	
 	//필드
-	private int cNo; //고객점수
+	private int cNo; //고객번호
 	private int point; // 포인트점수
 	
 	//생성자
@@ -44,7 +44,7 @@ public class Customer extends Person{
 	public void showInfo() {
 		System.out.print("#이름:"+super.getName()+","+"\t");
 		System.out.print("#핸드폰:"+super.getHp()+","+"\t");
-		System.out.print("#고객점수:"+this.cNo+","+"\t");
+		System.out.print("#고객번호:"+this.cNo+","+"\t");
 		System.out.print("#포인트점수:"+this.point);
 	}
 }

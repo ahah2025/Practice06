@@ -28,15 +28,14 @@ public class Customer extends User { //고객
 	//메소드일반
 	@Override
 	public String toString() {
-		return "아이디:"+id+","+"#패스워드"+password + point;
+		return "#"+"아이디:"+id + ", #패스워드:" + password + ","+ " #이름:"+super.getName()+","+" #포인트:"+point;
 	}
 
 	public void showInfo() {
-		System.out.print("아이디"+super.getId());
-		System.out.print("패스워드:"+super.getPassword());
-		System.out.print("이름:"+super.getName());
-		System.out.print("포인트:"+this.point);
+		System.out.print("#아이디:"+super.getId()+", ");
+		System.out.print("#패스워드:"+super.getPassword()+",");
+		System.out.print(" 이름:"+super.getName()+" , ");
+		System.out.print(" 포인트:"+this.point);
 	}
-	
 
 }

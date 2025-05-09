@@ -5,6 +5,7 @@ public class SmartPhone extends MusicPhone {
     public void execute(String str){
         
         //코드작성
+         
         
     }
  

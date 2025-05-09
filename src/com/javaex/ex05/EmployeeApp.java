@@ -6,8 +6,11 @@ public class EmployeeApp {
 
         Employee pt = new Depart( "홍길동", 5000, "개발부" );
         pt.showInformation();
+        
     }
+    
 
 }
+
 
 

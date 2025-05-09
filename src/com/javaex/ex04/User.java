@@ -48,15 +48,17 @@ public class User {
 	//메소드 일반
 	@Override
 	public String toString() {
-		return "#"+"아이디:"+id + ", #패스워드:" + password + ","+ " #이름:"+name+","+"#포인트:";
+		return "#"+"아이디:"+id + ", #패스워드:" + password + ","+ " #이름:"+name+", "+"#포인트:";
 	}
 	
 	public void showInfo() {
-		System.out.print("아이디"+id);
-		System.out.print("패스워드:"+password);
-		System.out.print("이름:"+name);
+		System.out.print("#아이디:"+id+", ");
+		System.out.print("#패스워드:"+password+", ");
+		System.out.println("#이름:"+name+",");
 		//System.out.println("포인트:"+point);
 	}
+
+	
 
 
 	

@@ -21,16 +21,16 @@ public class UserApp {
 		//u1.showInfo();
 	
 		//c1.showInfo();
+		System.out.println(c1.toString());
 		
-		System.out.println(e1.toString());
 		e1.showInfo();
 		
 	}
 
 }
 /*
-결 과 값 이 다르게 나옴
-#아이디:jws, #패스워드:j1234, #이름:정우성,#포인트:
-#아이디:master, #패스워드:m7788, #이름:운영자,#포인트:
-아이디master패스워드:m7788이름:운영자월급:500
+정우성 포인트 값이  안 나옴
+#아이디:jws, #패스워드:j1234, #이름:정우성, #포인트:
+#아이디:yjs, #패스워드:y2345, #이름:이효리, #포인트:2000
+#아이디:master, #패스워드:m7788, #이름:운영자, #월급:500
 */

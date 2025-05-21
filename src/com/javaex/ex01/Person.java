@@ -35,8 +35,12 @@ public class Person {
 
 	//메소드일반
 	public void showInfo() {
-		System.out.print("#이름:"+this.getName()+","+"\t");
-		System.out.println("#핸드폰:"+this.getHp());
+		System.out.println("#이름:" + name + ", #핸드폰:" + hp);
+	}
+	
+	@Override
+	public String toString() {
+		return "Person [name=" + name + ", hp=" + hp + "]";
 	}
 	
 	

@@ -8,15 +8,8 @@ public class Customer extends Person{
 	private int point; // 포인트점수
 	
 	//생성자
-	public Customer() {
-		super("정우성","010-1111-2222");
-	}
+	public Customer() {}
 	
-	public Customer(int cNo, int point) {
-		this.cNo = cNo;
-		this.point = point;
-	}
-
 	public Customer(String name, String hp,int cNo, int point) {
 		super(name, hp);
 		this.cNo = cNo;
@@ -42,9 +35,12 @@ public class Customer extends Person{
 
 	//메소드 일반
 	public void showInfo() {
-		System.out.print("#이름:"+super.getName()+","+"\t");
-		System.out.print("#핸드폰:"+super.getHp()+","+"\t");
-		System.out.print("#고객번호:"+this.cNo+","+"\t");
-		System.out.print("#포인트점수:"+this.point);
+		System.out.println("#이름:" + super.getName() + ", #핸드폰:" + super.getHp() + ", #고객번호:" + cNo + ", #포인트점수:" + point );
+	}
+	
+	@Override
+	public String toString() {
+		return "Customer [cNo=" + cNo + ", point=" + point + ", getcNo()=" + getcNo() + ", getPoint()=" + getPoint()
+				+ "]";
 	}
 }

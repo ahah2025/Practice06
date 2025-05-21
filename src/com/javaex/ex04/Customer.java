@@ -6,9 +6,7 @@ public class Customer extends User { //고객
 	private int point; //포인트점수
 
 	//생성자
-	public Customer() {
-		super();
-	}
+	public Customer() {}
 
 	public Customer(String id,String password,String name,int point) {
 		super(id,password,name);
@@ -26,16 +24,12 @@ public class Customer extends User { //고객
 
 	
 	//메소드일반
+	public void showInfo() {
+		System.out.println("#아이디:" + id+ ", #패스워드:" + password + ", #이름:" + super.getName()  + ", #포인트:" + point );
+	}
+	
 	@Override
 	public String toString() {
-		return "#"+"아이디:"+id + ", #패스워드:" + password + ","+ " #이름:"+super.getName()+","+" #포인트:"+point;
+		return "Customer [point=" + point + ", id=" + id + ", password=" + password + ", name=" + super.getName() + "]";
 	}
-
-	public void showInfo() {
-		System.out.print("#아이디:"+super.getId()+", ");
-		System.out.print("#패스워드:"+super.getPassword()+",");
-		System.out.print(" 이름:"+super.getName()+" , ");
-		System.out.print(" 포인트:"+this.point);
-	}
-
 }

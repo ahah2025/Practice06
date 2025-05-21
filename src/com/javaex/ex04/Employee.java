@@ -6,9 +6,7 @@ public class Employee extends User{ //직원
 	private int salary; //급여
 
 	//생성자
-	public Employee() {
-		super();
-	}
+	public Employee() {}
 
 	public Employee(String id,String password,String name, int salary) {
 		super(id,password,name);
@@ -25,18 +23,15 @@ public class Employee extends User{ //직원
 	}
 	
 	//메소드일반
-	@Override
-	public String toString() {
-		return "#"+"아이디:"+id + ", #패스워드:" + password + ","+ " #이름:"+super.getName()+","+" #월급:"+salary;
+	public void showInfo() {
+		System.out.println("#아이디:" + id+ ", #패스워드:" + password + ", #이름:" + super.getName()  + ", #월급:" + salary );
 	}
 	
-	public void showInfo() {
-		System.out.print("#아이디:"+super.getId()+", ");
-		System.out.print("#패스워드:"+super.getPassword()+",");
-		System.out.print(" #이름:"+super.getName()+",");
-		System.out.println(" #월급:"+this.salary);
-		System.out.print("운영자의 월급은 ");
-		System.out.print("5000000원 입니다.");
+	@Override
+	public String toString() {
+		return "Employee [salary=" + salary + ", id=" + id + ", password=" + password + ", name=" + super.getName() + "]";
 	}
+	
+
 	
 }

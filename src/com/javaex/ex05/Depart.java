@@ -6,8 +6,7 @@ public class Depart extends Employee{
 	private String department;
 	
 	//생성자
-	public Depart() {
-	}
+	public Depart() {}
 
 	public Depart(String name,int salary,String department) {
 		super(name,salary);
@@ -25,7 +24,7 @@ public class Depart extends Employee{
 
 	//메소드일반
     public void showInformation() {
-        System.out.println("이름:" + super.getName() + " 연봉:" + super.getSalary()+" 부서:"+department);
+        System.out.println("이름:" + super.getName() + " 연봉:" + super.getSalary()+" 부서:"+this.department);
     }
 	
 	
